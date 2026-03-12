@@ -83,7 +83,7 @@ fun EntrenadorPersonal(modifier: Modifier = Modifier) {
             label = { Text("Pes: ") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
-        Spacer(Modifier.height(50.dp))
+        Spacer(Modifier.height(20.dp))
         Button(onClick = {
             showResult = true
             edat = java.time.LocalDate.now().year - anyNeixement.toInt()
@@ -94,7 +94,7 @@ fun EntrenadorPersonal(modifier: Modifier = Modifier) {
             else valoracio = "SOBREPES"
 
         }, enabled = enableButton) {
-            Text("Calcular preu total")
+            Text("Calcular IMC")
         }
         if (showResult) {
             Text("NOM: $nom", fontSize = 24.sp, fontWeight = FontWeight.ExtraBold)

@@ -29,8 +29,9 @@ class MainActivity : ComponentActivity() {
             ExerciciEstatsTheme {
                 Scaffold(modifier = modifier.fillMaxSize()) { innerPadding ->
                     //CalculadoraPropina(Modifier.padding(innerPadding))
-                    //
-                    NumeroSecret(modifier.padding(innerPadding))
+                    //EntrenadorPersonal(Modifier.padding(innerPadding))
+                    //NumeroSecret(modifier.padding(innerPadding))
+                    Calculadora(Modifier.padding(innerPadding))
                 }
             }
         }
